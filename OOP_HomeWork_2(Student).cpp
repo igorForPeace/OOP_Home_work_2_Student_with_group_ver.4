@@ -1,5 +1,6 @@
 #include "Student.h"
 #include "Group.h"
+#include "Aspirant.h"
 
 
 
@@ -175,4 +176,21 @@ int main()
 	cout << "===================" << endl;
 	cout << A[0] << endl;
 	return 0;*/
+
+	Aspirant Ihor("Транспорт","Плахотнюк","Игорь","Витальевич");
+	Ihor.Show_student();
+	cout << endl;
+	Aspirant Vasya;
+	Vasya.Show_student();
+	Vasya.SetName("Вася");
+	Vasya.SetSurname("Пупкин");
+	Vasya.SetPatronymic("Васильевич");
+	cout << endl;
+	Vasya.Show_student();
+	Vasya.SetTheme("Химия");
+	Vasya.Show_student();
+
+	
+
+	return 0;
 }
